@@ -1,0 +1,19 @@
+#-----------profile-------------#
+- request:
+     method: GET
+     url: /player
+  response:
+     status: 200
+     header:
+        content-type: application/json
+     file: user.json
+
+- request:
+     method: POST
+     url: /profile
+     post: '{"id":"1", "name":"ying"}'
+  response:
+     status: 200
+     header:
+        content-type: application/json
+     file: profileId1.json

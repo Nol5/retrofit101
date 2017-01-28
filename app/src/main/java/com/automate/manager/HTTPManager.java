@@ -16,7 +16,7 @@ public class HTTPManager {
 
     private HTTPManager(){
           retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.43.168:3000/")
+                .baseUrl("http://172.16.193.16:80/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
